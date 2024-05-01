@@ -1,5 +1,5 @@
 
-import {useState} from "react";
+import { useState } from "react";
 import travelPlansData from "../assets/travel-plans.json";
 
 export default function TravelList() {
@@ -16,23 +16,26 @@ export default function TravelList() {
             {travels.map((element) => (
                 <div className="card">
                     <img src={element.image} />
+
                     <div className="information">
-                        <h4>{element.destination}  ({element.days} days)</h4>
-                        <h5>{element.description}</h5>
+                      
+                        <h2>{element.destination}  ({element.days} days)</h2>
+                        <h3>{element.description}</h3>
                         <h5>Price: {element.totalCost}€</h5>
+                  
+                            {element.totalCost > 350 ?
+                                <span className="premium-label">Premium</span> :
+                                <span className="great-label">Great Deal!</span>}
+
+                            {element.allInclusive && <span className="inclusive-label">All-inclusive</span>}
+
                         
-                        <span>             
-                        {element.totalCost > 350 ? 
-              <span className="premium-label">Premium</span> : 
-              <span className="great-label">Great Deal!</span>}
-                        </span>
-
-                        {element.allInclusive && <span className="inclusive-label">All-inclusive</span>}
-
+                    
                         <button onClick={()=> handleDelete(element.index)}>Delete</button>
 
                     </div>
                 </div>
+
             ))}
         </div>
     );

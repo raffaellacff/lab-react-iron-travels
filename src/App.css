@@ -42,11 +42,15 @@
 
 
 .card {
-  border: 1px solid black;
+  border: 2px solid rgb(121, 45, 203);
+  background-color: white;
   padding: 20px;
   margin: 20px;
   width: 80%;
   display: flex;
+  border-radius: 24px;
+
+  
 }
 
 .card img {
@@ -54,34 +58,46 @@
   height: auto;
   margin-bottom: 10px;
   margin-right: 20px;
+  border: 2px solid rgb(121, 45, 203);
+
+  border-radius: 24px;
+
 }
 
 .information{
-  display: flex;
-  flex-direction: column;
+  display: flex-start;
+  flex-direction: row;
   text-align: left;
+  gap: 30px;
+  height: fit-content;
 }
 
 .premium-label{
   background-color: rgb(84, 105, 212);
-  border-radius: 4px;
+  border-radius: 24px;
   font-size: 14px;
-  padding: 4px 8px;
+  padding: 8px 12px;
+  color: white;
+
 
 }
 
 .great-label{
   background-color: green;
-  border-radius: 4px;
+  border-radius: 24px;
   font-size: 14px;
-  padding: 4px 8px;
+  padding: 8px 12px;
+  color: white;
 }
 
 .inclusive-label{
   background-color: rgb(84, 105, 212);
-  border-radius: 4px;
+  border-radius: 24px;
   font-size: 14px;
-  padding: 4px 8px;
+  padding: 8px 12px;
+  color: white;
+  width: auto;
+  margin-left: 20px;
 }
 
 

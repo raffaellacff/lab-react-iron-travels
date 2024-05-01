@@ -32,10 +32,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: gray;
+  background-color: rgb(211, 200, 200);
   cursor: pointer;
   transition: border-color 0.25s;
-  display: inline-block;
+  display: flex;
+  margin-top: 16px;
 }
 button:hover {
   border-color: #646cff;
