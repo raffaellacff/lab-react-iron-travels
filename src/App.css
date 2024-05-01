@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -36,3 +39,50 @@
 .text-iron {
   color: #0a035a;
 }
+
+
+.card {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  width: 80%;
+  display: flex;
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.premium-label{
+  background-color: rgb(84, 105, 212);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 8px;
+
+}
+
+.great-label{
+  background-color: green;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.inclusive-label{
+  background-color: rgb(84, 105, 212);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+
+
